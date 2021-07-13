@@ -1,0 +1,395 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+p{
+    margin-bottom: .3rem;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.6;
+    background-color: #d4d8d7;
+    color: #3B3A3B;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+.header, .footer {
+    padding-right: 400px;
+    position: relative;
+}
+.main .section{
+    padding-right: 400px;
+}
+.header {
+    position: relative;
+    background-color: #d4d8d7;
+    border-top-left-radius: 20% 50%;
+    border-bottom-left-radius: 20% 50%;
+    margin: 1.5rem 0 3rem;
+}
+
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.sidebar {
+    padding-top: 40%;
+    background-color: #2A2A2B;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+}
+
+.heading-h3 {
+    font-weight: 500;
+}
+
+.heading-h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.page-wrapper {
+    max-width: 1140px;
+    padding: 3rem 3rem 0;
+    margin: 0 auto;
+    position: relative;
+    min-width: 1140px;
+    background-color: #ffffff;
+}
+
+.page-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    border: 2px solid #000000;
+    z-index: 3;
+}
+
+.picture-wrapper {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 25px solid #2A2A2B;
+    overflow: hidden;
+    z-index: 3;
+    position: relative;
+    background-color: #2A2A2B;
+}
+
+.heading-wrapper {
+    background-color: #F09518;
+    color: #ffffff;
+    padding: 2rem 1rem 2rem 8rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 300px;
+    right: -3rem;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.information {
+    text-indent: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.subheader {
+    background-color: #F09518;
+    text-indent: 50%;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    margin-left: -1.5rem;
+}
+
+.sidebar-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 4;
+    position: relative;
+    height: 100%;
+}
+
+.data-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.data-list__company {
+    -webkit-box-flex: 3;
+    -ms-flex: 3 1 0px;
+    flex: 3 1 0;
+    font-weight: 700;
+}
+
+.data-list__description {
+    -webkit-box-flex: 7;
+    -ms-flex: 7 1 0px;
+    flex: 7 1 0;
+}
+.data-list__h4, .time{
+    margin-bottom: .3rem;
+    display: block;
+}
+
+.aside-list {
+    margin-bottom: 1.5rem;
+}
+
+.aside-list__svg {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.envelope {
+    width: 35px;
+    left: 2px;
+}
+
+.aside-list__svg path {
+    fill: #F09518;
+}
+
+.phone {
+    width: 32px;
+    left: 5px;
+}
+
+.aside-list__item {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 1rem;
+}
+
+.aside-list__h4 {
+    text-transform: uppercase;
+}
+
+.aside-list__label {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .3rem;
+}
+
+.aside-list__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.aside-heading {
+    text-transform: uppercase;
+    border: 2px solid #F0953B;
+    padding: .5rem 0;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    width: 250px;
+    text-align: center;
+}
+
+.aside-list__item_progress {
+    padding-left: 0;
+}
+
+progress {
+    border-radius: 0;
+    border: 2px solid #FF9933;
+    height: 1.3rem;
+    min-width: 250px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+    background-color: #FF9933;
+}
+progress::-webkit-progress-value {
+    background-color: #FF9933;
+}
+.social-list {
+    list-style: none;
+    display: block;
+    margin-top: auto;
+    position: relative;
+}
+
+.social-list:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -2rem;
+    right: -2rem;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.social-list__item {
+    padding: 15px 5px;
+    display: inline-block;
+}
+
+.social-list__svg {
+    width: 30px;
+    height: 30px;
+}
+
+.social-list__svg path {
+    fill: #ffffff;
+}
+
+.social-list__svg.linkedin path:last-child {
+    fill: #2A2A2B;
+}
+
+.s-contact, .s-skills, .s-social {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+.s-contact{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.s-social {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #F09518;
+    margin-left: -3rem;
+    padding-left: 3rem;
+    position: static;
+    text-align: center;
+}
+.footer__link{
+    color: inherit;
+}
+.rs-school{
+    width: 50px;
+    height: 20px;
+}
+.address{
+    text-align: left;
+    position: relative;
+    z-index: 5;
+    font-size: 14px;
+}
+.rs-link{
+    float: right;
+}
+.time{
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
