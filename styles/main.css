@@ -474,6 +474,7 @@ progress::-webkit-progress-value {
     padding-left: 3rem;
     position: static;
     text-align: center;
+    position: relative;
 }
 
 .footer__link {
@@ -488,7 +489,7 @@ progress::-webkit-progress-value {
 .address {
     text-align: left;
     position: relative;
-    z-index: 5;
+    z-index: 3;
     font-size: 14px;
 }
 
