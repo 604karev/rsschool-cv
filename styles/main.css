@@ -41,8 +41,6 @@ p {
 
 html {
     font-size: 15px;
-    overflow: hidden;
-    height: 100%;
 }
 
 body {
@@ -54,7 +52,6 @@ body {
     line-height: 1.6;
     background-color: #d4d8d7;
     color: #3B3A3B;
-    overflow-y: auto;
     height: 100%;
 }
 
@@ -156,7 +153,6 @@ article > * + * {
     margin: 0 auto;
     position: relative;
     background-color: #ffffff;
-    overflow-y: scroll;
 }
 
 .page-wrapper:before {
@@ -214,6 +210,10 @@ article > * + * {
 body.active .sidebar {
     width: 350px;
     overflow-y: scroll;
+}
+
+body.active {
+    overflow-y: hidden;
 }
 
 body.active .overlay {
@@ -586,7 +586,7 @@ progress::-webkit-progress-value {
         margin-right: auto;
     }
 
-    .cv-picture , .picture-wrapper{
+    .cv-picture, .picture-wrapper {
         width: 100%;
         height: 100%;
     }
