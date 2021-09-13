@@ -6,13 +6,11 @@ const overlay = document.querySelector('.overlay');
 
 
 const toggleSidebar = (e) => {
-    e.stopPropagation();
-    console.log(e);
     sideBar.classList.toggle('active');
     body.classList.toggle('active');
     sideBarWrapper.classList.remove('visible');
     if(document.body.clientWidth >= window.innerWidth){
-        console.log('asdfsad')
+
     }
 
 };
