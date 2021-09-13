@@ -472,7 +472,6 @@ progress::-webkit-progress-value {
     background-color: #F09518;
     margin-left: -3rem;
     padding-left: 3rem;
-    position: static;
     text-align: center;
     position: relative;
 }
