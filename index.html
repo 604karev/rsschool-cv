@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kirill Hrudzinski</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,7 @@
 </head>
 <body>
 <div class="page-wrapper">
+
     <header class="header">
         <div class="picture-wrapper">
             <img class="cv-picture" src="images/kirill-hrudzinski.png" alt="kirill-hrudzinski">
@@ -22,6 +23,9 @@
         </div>
     </header>
     <aside class="sidebar">
+        <div class="burger">
+            <span class="burger-line"></span>
+        </div>
         <div class="sidebar-wrapper">
             <section class="section s-contact">
                 <h2 class="h2 aside-heading">Contact me</h2>
@@ -157,7 +161,7 @@
                     haven't written much lately, I use ES6, I worked with React / Redux, I made a couple of
                     non-commercial
                     applications with this framework, <a class="information__link information__link_primary"
-                                                             href="http://digitdesign.org/">http://digitdesign.org/</a>
+                                                         href="http://digitdesign.org/">http://digitdesign.org/</a>
                     is one on them.</p>
                 <p class="information__paragraph">My english level is strong pre-intermediate: I can connect between two
                     words, but some time I have problems, but this doesn't prevent for me to understand the tasks that
@@ -560,6 +564,8 @@
 
     </footer>
 </div>
+<span class="overlay"></span>
 <link rel="stylesheet" href="styles/main.css">
+<script src="script.js"></script>
 </body>
 </html>
