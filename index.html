@@ -12,6 +12,7 @@
 </head>
 <body>
 <div class="page-wrapper">
+
     <header class="header">
         <div class="picture-wrapper">
             <img class="cv-picture" src="images/kirill-hrudzinski.png" alt="kirill-hrudzinski">
@@ -22,6 +23,9 @@
         </div>
     </header>
     <aside class="sidebar">
+        <div class="burger">
+            <span class="burger-line"></span>
+        </div>
         <div class="sidebar-wrapper">
             <section class="section s-contact">
                 <h2 class="h2 aside-heading">Contact me</h2>
@@ -156,7 +160,9 @@
                     grid, I can easily find and fix layout bugs, I can improve loading performance. I know JS, but I
                     haven't written much lately, I use ES6, I worked with React / Redux, I made a couple of
                     non-commercial
-                    applications with this framework.</p>
+                    applications with this framework, <a class="information__link information__link_primary"
+                                                         href="http://digitdesign.org/">http://digitdesign.org/</a>
+                    is one on them.</p>
                 <p class="information__paragraph">My english level is strong pre-intermediate: I can connect between two
                     words, but some time I have problems, but this doesn't prevent for me to understand the tasks that
                     are
@@ -166,42 +172,62 @@
         </section>
         <section class="section s-experience">
             <h2 class="h2 subheader">Experience</h2>
-            <dl class="data-list">
-                <dt class="data-list__company">
-                    <span class="time">2017 - Present</span>
-                    <p class="data-list__paragraph">Omicronmedia</p>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2017-07">2017 - Present</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">Omicronmedia</dt>
+                        <dd class="description-company__location">USA(Florida)</dd>
+                    </dl>
                 </dt>
-                <dd class="data-list__description">
-                    <h4 class="data-list__h4">Front End developer / Webmaster</h4>
-                    <p class="data-list__paragraph">Mostly I'm creating web pages and editing existing, parts pages,
+                <dd class="description-list__description">
+                    <h4 class="description-list__h4">Front End developer / Webmaster (Remote)</h4>
+                    <p class="description-list__paragraph">Mostly I'm creating web pages and editing existing, parts
+                        pages,
                         payment cart, user's cabinet,
-                        email templates with HTML/CSS(SASS)/JavaScript and assets. The last my work is redesign
-                        https://www.pureusenet.nl/
+                        email templates and etc. with HTML/CSS(SASS)/JavaScript and assets. The last my work is redesign
+                        <a class="description-list__link description-list__link_graduation"
+                           href="https://www.pureusenet.nl/">https://www.pureusenet.nl/</a>
                     </p>
-                    <p class="data-list__paragraph">Technologies what I use:
+                    <p class="description-list__paragraph">Technologies what I use:
                         HTML, CSS, Sass, Javascript, JQuery, Gulp, Npm, Dislo CMS, WordPress CMS, Bootstrap3/4, AJAX,
                         Canvas.
                         I do React/Redux in my free time</p>
                 </dd>
             </dl>
-            <dl class="data-list">
-                <dt class="data-list__company">
-                    <span class="time">2019 - 2020</span>
-                    <p class="data-list__paragraph">VEB Technologies</p>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2019-07">2019 -</time>
+                        <time class="time__end" datetime="2020-12">2020</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">VEB Technologies</dt>
+                        <dd class="description-company__location">Belarus(Minsk)</dd>
+                    </dl>
                 </dt>
-                <dd class="data-list__description">
-                    <h4 class="data-list__h4">Lead Software Support Specialist</h4>
-                    <p class="data-list__paragraph">Support products based on BPM Pega</p>
+                <dd class="description-list__description">
+                    <h4 class="description-list__h4">Lead Software Support Specialist</h4>
+                    <p class="description-list__paragraph">Support products based on BPM Pega</p>
                 </dd>
             </dl>
-            <dl class="data-list">
-                <dt class="data-list__company">
-                    <span class="time">2014 - 2017</span>
-                    <p class="data-list__paragraph">Sberbank-Technology </p>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2014-11">2014 -</time>
+                        <time class="time__end" datetime="2017-12">2017</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">Sberbank-Technology</dt>
+                        <dd class="description-company__location">Belarus(Minsk)</dd>
+                    </dl>
                 </dt>
-                <dd class="data-list__description">
-                    <h4 class="data-list__h4">Senior Software Support Engineer</h4>
-                    <p class="data-list__paragraph">Implementation and support of a credit line for small and medium
+                <dd class="description-list__description">
+                    <h4 class="description-list__h4">Senior Software Support Engineer</h4>
+                    <p class="description-list__paragraph">Implementation and support of a credit line for small and
+                        medium
                         businesses based on BPM Pega,
                         IBM WebSphere Application Server, IBM HTTP Server, setting up a connection between IBM WebSphere
                         MQ.
@@ -210,38 +236,56 @@
                         Manager, BusinessStudio.</p>
                 </dd>
             </dl>
-            <dl class="data-list">
-                <dt class="data-list__company">
-                    <span class="time">2014 - 2014</span>
-                    <p class="data-list__paragraph">CJSC "North European Bank"</p>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2014-04">2014 -</time>
+                        <time class="time__end" datetime="2014-10">2014</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">CJSC "North European Bank"</dt>
+                        <dd class="description-company__location">Belarus(Minsk)</dd>
+                    </dl>
                 </dt>
-                <dd class="data-list__description">
-                    <h4 class="data-list__h4">IT Specialist</h4>
-                    <p class="data-list__paragraph">Implementation and support of the software of the Bank;
+                <dd class="description-list__description">
+                    <h4 class="description-list__h4">IT Specialist</h4>
+                    <p class="description-list__paragraph">Implementation and support of the software of the Bank;
                         Participation in projects on software
                         development of the Bank, rendering consultations and assistance to the Bank's units; Updating
                         and maintenance of SC-Bank NT;</p>
                 </dd>
             </dl>
-            <dl class="data-list">
-                <dt class="data-list__company">
-                    <span class="time">2013 - 2014</span>
-                    <p class="data-list__paragraph">Belagroprombank</p>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2013-04">2013 -</time>
+                        <time class="time__end" datetime="2014-03">2014</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">CJSC "Belagroprombank"</dt>
+                        <dd class="description-company__location">Belarus(Mogilev)</dd>
+                    </dl>
                 </dt>
-                <dd class="data-list__description">
-                    <h4 class="data-list__h4">Support Engineer</h4>
-                    <p class="data-list__paragraph">Administration and servicing of ATMs NCR, Wincor Nixdorf,
+                <dd class="description-list__description">
+                    <h4 class="description-list__h4">Support Engineer</h4>
+                    <p class="description-list__paragraph">Administration and servicing of ATMs NCR, Wincor Nixdorf,
                         self-service terminals, Lanecom,
                         Hypercom, terminal equipment, controversial operations in the above equipment</p>
                 </dd>
             </dl>
-            <dl class="data-list">
-                <dt class="data-list__company">
-                    <span class="time">2008 - 2013</span>
-                    <p class="data-list__paragraph">Belagroprombank</p>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2008-03">2008 -</time>
+                        <time class="time__end" datetime="2013-04">2013</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">CJSC "Belagroprombank"</dt>
+                        <dd class="description-company__location">Belarus(Glusk)</dd>
+                    </dl>
                 </dt>
-                <dd class="data-list__description">
-                    <h4 class="data-list__h4">Support Engineer</h4>
+                <dd class="description-list__description">
+                    <h4 class="description-list__h4">Support Engineer</h4>
                     <p>Maintenance of SoftClub software, "Client-Bank"; PTSS, ATM, Lanecom, Hypercom, terminal
                         equipment; Minor repair of peripheral and copying devices; administration; backup; Consultation
                         of users; Setting up and debugging the network; Purchase of consumables</p>
@@ -250,31 +294,131 @@
         </section>
         <section class="section s-education">
             <h2 class="h2 subheader">Education</h2>
-            <dl class="data-list">
-                <dt class="data-list__company">
-                    <span class="time">2017 - 2018</span>
-                    <p class="data-list__paragraph">IT Academy</p>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2021-09">2021 -</time>
+                        <time class="time__end" datetime="2021-07">2021</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">The Rolling Scopes School</dt>
+                        <dd class="description-company__location">Belarus(Minsk)</dd>
+                    </dl>
                 </dt>
-                <dd class="data-list__description">
-                    <h4 class="data-list__h4">Angular & React</h4>
+                <dd class="description-list__description">
+                    <article>
+                        <h4 class="description-list__h4">Pre School(Javascript)</h4>
+                        <p>During education I've done a couple of tasks:</p>
+                        <ul class="acquired-skills">
+                            <li class="acquired-skills__item">
+                                <a class="description-list__link"
+                                   href="https://604karev.github.io/rsschool-cv/">CV</a>;
+                            </li>
+                            <li class="acquired-skills__item">
+                                <a class="description-list__link"
+                                   href="https://rolling-scopes-school.github.io/604karev-JSFEPRESCHOOL/museum/">Museum</a>;
+                            </li>
+                            <li class="acquired-skills__item">
+                                <a class="description-list__link"
+                                   href="https://rolling-scopes-school.github.io/604karev-JSFEPRESCHOOL/momentum/">Momentum</a>;
+                            </li>
+                            <li class="acquired-skills__item">
+                                <a class="description-list__link"
+                                   href="https://rolling-scopes-school.github.io/604karev-JSFEPRESCHOOL/drum-kit/">Drum
+                                    Kit</a>;
+                            </li>
+                            <li class="acquired-skills__item">
+                                <a class="description-list__link"
+                                   href="https://rolling-scopes-school.github.io/604karev-JSFEPRESCHOOL/video-player/">Custom
+                                    Video Player</a>
+                            </li>
+                        </ul>
+                    </article>
                 </dd>
             </dl>
-            <dl class="data-list">
-                <dt class="data-list__company">
-                    <span class="time">2017 - 2017</span>
-                    <p class="data-list__paragraph">IT Academy</p>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2008-03">2017 -</time>
+                        <time class="time__end" datetime="2013-04">2018</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">IT Academy</dt>
+                        <dd class="description-company__location">Belarus(Minsk)</dd>
+                    </dl>
                 </dt>
-                <dd class="data-list__description">
-                    <h4 class="data-list__h4">Advanced level, Front-end</h4>
+                <dd class="description-list__description">
+                    <article>
+                        <h4 class="description-list__h4">Angular & React</h4>
+                        <p>During education I lerned:</p>
+                        <ul class="acquired-skills">
+                            <li class="acquired-skills__item">Work with ES6 and ES7 language standards and some design
+                                patterns;
+                            </li>
+                            <li class="acquired-skills__item">Understand the basic features of the React framework;</li>
+                            <li class="acquired-skills__item">Know the architectural patterns of Flux, Redux;</li>
+                            <li class="acquired-skills__item">Work with git technology and github service</li>
+                            <li class="acquired-skills__item">Develop a variety of interactive React components;</li>
+                            <li class="acquired-skills__item">Test the developed software modules;</li>
+                            <li class="acquired-skills__item">Apply an object-oriented approach to component
+                                development;
+                            </li>
+                            <li class="acquired-skills__item">Configure react routing;</li>
+                        </ul>
+                        <p>My graduation project: <a class="description-list__link description-list__link_graduation"
+                                                     href="https://604karev.github.io/">Internet Shop</a></p>
+                    </article>
                 </dd>
             </dl>
-            <dl class="data-list">
-                <dt class="data-list__company">
-                    <span class="time">2004 - 2012</span>
-                    <p class="data-list__paragraph">Belarusian State University of Informatics and Radioelectronics</p>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2008-03">2017 -</time>
+                        <time class="time__end" datetime="2013-04">2017</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">IT Academy</dt>
+                        <dd class="description-company__location">Belarus(Minsk)</dd>
+                    </dl>
                 </dt>
-                <dd class="data-list__description">
-                    <h4 class="data-list__h4">Electronics Engineer</h4>
+                <dd class="description-list__description">
+                    <article>
+                        <h4 class="description-list__h4">Advanced level, Front-end</h4>
+                        <p>During education I lerned:</p>
+                        <ul class="acquired-skills">
+                            <li class="acquired-skills__item">To work effectively with web pages;</li>
+                            <li class="acquired-skills__item">Handle events and work with mouse and touchscreen;</li>
+                            <li class="acquired-skills__item">Debugging and testing code;</li>
+                            <li class="acquired-skills__item">Work with regular expressions;</li>
+                            <li class="acquired-skills__item">Work with multimedia capabilities of browsers - SVG and
+                                Canvas, create productive graphics and multimedia;
+                            </li>
+                            <li class="acquired-skills__item">Use the communication capabilities of the browser, incl.
+                                JSON
+                                and AJAX;
+                            </li>
+                        </ul>
+                        <p>My graduation project: <a class="description-list__link description-list__link_graduation"
+                                                     href="https://604karev.github.io/visualiserCanvas/">Canvas
+                            Visualiser</a></p>
+                    </article>
+
+                </dd>
+            </dl>
+            <dl class="description-list">
+                <dt class="description-list__wrapper">
+                    <div class="time">
+                        <time class="time__start" datetime="2004-09">2004 -</time>
+                        <time class="time__end" datetime="2012-07">2012</time>
+                    </div>
+                    <dl class="description-company">
+                        <dt class="description-company__company">BSUIR</dt>
+                        <dd class="description-company__location">Belarus(Minsk)</dd>
+                    </dl>
+                </dt>
+                <dd class="description-list__description">
+                    <h4 class="description-list__h4">Electronics Engineer</h4>
+                    <p>The topic of my thesis project: "Gain control of a photodetector"</p>
                 </dd>
             </dl>
         </section>
@@ -420,6 +564,8 @@
 
     </footer>
 </div>
+<span class="overlay"></span>
 <link rel="stylesheet" href="styles/main.css">
+<script src="script.js"></script>
 </body>
 </html>
