@@ -136,6 +136,7 @@ img {
     position: absolute;
     height: 30px;
     pointer-events: auto;
+    transition: all .5s ease;
 }
 
 .heading-h3 {
