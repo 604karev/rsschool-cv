@@ -125,7 +125,7 @@ img {
 }
 
 .burger {
-    top: 50px;
+    top: 3rem;
     display: none;
     left: 0;
     right: 0;
@@ -397,6 +397,7 @@ progress::-moz-progress-bar {
     display: block;
     margin-top: auto;
     position: relative;
+
 }
 
 .social-list:before {
@@ -540,6 +541,9 @@ progress::-moz-progress-bar {
 
     .picture-wrapper {
         margin: auto auto 2rem;
+    }
+    .social-list{
+        margin-bottom: 3rem;
     }
 }
 
