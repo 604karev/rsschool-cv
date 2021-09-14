@@ -39,14 +39,15 @@ p {
     margin-bottom: .3rem;
 }
 
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
 html {
     font-size: 15px;
 }
 
-html, body {
-    height: 100%;
-    overflow: auto
-}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -57,7 +58,6 @@ body {
     line-height: 1.6;
     background-color: #d4d8d7;
     color: #3B3A3B;
-    height: 100%;
     position: relative;
 }
 
@@ -69,10 +69,6 @@ ol[class] {
 img {
     max-width: 100%;
     display: block;
-}
-
-article > * + * {
-    margin-top: 1em;
 }
 
 .header, .footer {
@@ -107,6 +103,9 @@ article > * + * {
     bottom: 0;
     width: 350px;
     transition: width .5s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 1;
 
 }
 
@@ -162,7 +161,7 @@ article > * + * {
     background-color: #ffffff;
 }
 
-.page-wrapper:before {
+.page-wrapper:after {
     content: '';
     position: absolute;
     top: 1.5rem;
@@ -171,6 +170,7 @@ article > * + * {
     bottom: 1.5rem;
     border: 2px solid #000000;
     z-index: 3;
+    pointer-events: none;
 }
 
 .picture-wrapper {
@@ -216,11 +216,7 @@ article > * + * {
 
 body.active .sidebar {
     width: 350px;
-    overflow-y: scroll;
-}
-
-body.active {
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 body.active .overlay {
@@ -502,7 +498,7 @@ progress::-webkit-progress-value {
 
 .overlay {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -511,6 +507,8 @@ progress::-webkit-progress-value {
     z-index: 10;
     display: none;
     cursor: pointer;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0)
 }
 
 @media (max-width: 1140px) {
@@ -524,11 +522,9 @@ progress::-webkit-progress-value {
 
     .sidebar {
         width: 80px;
-        z-index: 11;
+        z-index: 110;
         position: fixed;
         padding-top: 150px;
-        transform: translate3d(0, 0, 0);
-
     }
 
     .main .section, .footer {
@@ -623,12 +619,14 @@ progress::-webkit-progress-value {
 
     }
 
-    .page-wrapper {
-        overflow-y: hidden;
-    }
 
     body.active .sidebar {
         overflow-y: hidden !important;
+    }
+
+    body {
+        overflow-y: scroll;
+
     }
 }
 
