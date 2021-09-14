@@ -26,7 +26,7 @@ const toggleInformation = (e) => {
 
 
 const removeVisible = () => {
-    if (window.innerWidth < 1140 && !sideBar.classList.contains('active')) {
+    if (window.innerWidth <= 1140 && !sideBar.classList.contains('active')) {
         sideBarWrapper.classList.remove('visible');
     }
 };
