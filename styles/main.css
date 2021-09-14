@@ -100,7 +100,7 @@ img {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     z-index: 1;
-
+    box-shadow: -2px 0px 15px 5px rgba(0, 0, 0, .2);
 }
 
 .burger-line, .burger-line:before, .burger-line:after {
@@ -153,6 +153,7 @@ img {
     margin: 0 auto;
     position: relative;
     background-color: #ffffff;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
 }
 
 .page-wrapper:after {
@@ -176,6 +177,7 @@ img {
     z-index: 3;
     position: relative;
     background-color: #2A2A2B;
+    box-shadow: 0 0px 25px 5px rgba(0, 0, 0, .2);
 }
 
 .heading-wrapper {
@@ -192,6 +194,7 @@ img {
     z-index: 2;
     text-transform: uppercase;
     transition: transform .5s ease;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .2);
 }
 
 .information {
@@ -385,7 +388,7 @@ progress::-webkit-progress-value {
     background-color: #FF9933;
 }
 
-progress::-webkit-progress-value {
+progress::-moz-progress-bar {
     background-color: #FF9933;
 }
 
@@ -451,6 +454,7 @@ progress::-webkit-progress-value {
     display: -ms-flexbox;
     display: flex;
     align-items: flex-end;
+    margin-top: 4rem;
 }
 
 .footer {
