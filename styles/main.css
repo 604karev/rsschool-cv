@@ -103,26 +103,40 @@ img {
     box-shadow: -2px 0px 15px 5px rgba(0, 0, 0, .2);
 }
 
+.sidebar.active .burger-line{
+    transform: translateX(-30px);
+    background: transparent;
+}
+
+.sidebar.active .burger-line:before {
+    transform: rotate(45deg) translate(15px, -15px);
+}
+
+.sidebar.active .burger-line:after {
+    transform: rotate(-45deg) translate(15px, 15px);
+}
+
 .burger-line, .burger-line:before, .burger-line:after {
     height: 2px;
     background-color: #616161;
     width: 30px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+}
+.burger-line:before, .burger-line:after{
     position: absolute;
+    content: '';
 }
 
-.burger-line:before, .burger-line:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -10px;
-    top: auto;
-    left: 0;
-    width: 100%;
+.burger-line:before {
+    transform: translateY(-10px);
 }
 
 .burger-line:after {
-    bottom: -20px;
+    transform: translateY(10px);
 }
+
 
 .burger {
     top: 3rem;
@@ -137,6 +151,8 @@ img {
     height: 30px;
     pointer-events: auto;
     transition: all .5s ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .heading-h3 {
@@ -280,7 +296,8 @@ body.active .overlay {
     font-style: italic;
     font-weight: 500;
 }
-.acquired-skills{
+
+.acquired-skills {
     margin-bottom: .3rem;
 }
 
@@ -536,7 +553,7 @@ progress::-moz-progress-bar {
 
 @media (max-width: 1140px) {
     .burger {
-        display: block;
+        display: flex;
     }
 
     .sidebar-wrapper {
