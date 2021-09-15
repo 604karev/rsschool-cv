@@ -10,13 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/github-dark-dimmed.min.css">
+    <script src="js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <div class="page-wrapper">
 
     <header class="header">
         <div class="picture-wrapper">
-            <img class="cv-picture" src="images/kirill-hrudzinski.png" alt="kirill-hrudzinski">
+            <img class="cv-picture" src="assets/img/kirill-hrudzinski.png" alt="kirill-hrudzinski">
         </div>
         <div class="heading-wrapper">
             <h1 class="h1 heading heading-h1">Kirill Hrudzinski</h1>
@@ -192,10 +195,30 @@
                         <a class="description-list__link description-list__link_graduation"
                            href="https://www.pureusenet.nl/">https://www.pureusenet.nl/</a>
                     </p>
-                    <p class="description-list__paragraph">Technologies what I use:
-                        HTML, CSS, Sass, Javascript, JQuery, Gulp, Npm, Dislo CMS, WordPress CMS, Bootstrap3/4, AJAX,
-                        Canvas.
-                        I do React/Redux in my free time</p>
+                    <div class="technologies">
+                        <p class="technologies__paragraph">Technologies what I used:</p>
+                        <ul class="technologies__list">
+                            <li class="technologies__item">HTML</li>
+                            <li class="technologies__item">CSS</li>
+                            <li class="technologies__item">Sass</li>
+                            <li class="technologies__item">Javascript</li>
+                            <li class="technologies__item">JQuery</li>
+                            <li class="technologies__item">Gulp</li>
+                            <li class="technologies__item">Npm</li>
+                            <li class="technologies__item">Dislo CMS</li>
+                            <li class="technologies__item">WordPress CMS</li>
+                            <li class="technologies__item">Bootstrap3/4</li>
+                            <li class="technologies__item">AJAX</li>
+                            <li class="technologies__item">Canvas</li>
+                        </ul>
+                        <p class="technologies__paragraph">Also I have minor experience with:</p>
+                        <ul class="technologies__list">
+                            <li class="technologies__item">React</li>
+                            <li class="technologies__item">Redux</li>
+                            <li class="technologies__item">GraphQL</li>
+                            <li class="technologies__item">Axios</li>
+                        </ul>
+                    </div>
                 </dd>
             </dl>
             <dl class="description-list">
@@ -334,6 +357,15 @@
                                     Video Player</a>
                             </li>
                         </ul>
+                        <div class="technologies">
+                            <p class="technologies__paragraph">Technologies what I used:</p>
+                            <ul class="technologies__list">
+                                <li class="technologies__item">JavaScript</li>
+                                <li class="technologies__item">HTML</li>
+                                <li class="technologies__item">CSS</li>
+                                <li class="technologies__item">API</li>
+                            </ul>
+                        </div>
                     </article>
                 </dd>
             </dl>
@@ -368,6 +400,23 @@
                         </ul>
                         <p>My graduation project: <a class="description-list__link description-list__link_graduation"
                                                      href="https://604karev.github.io/">Internet Shop</a></p>
+                        <div class="technologies">
+                            <p class="technologies__paragraph">Technologies what I used:</p>
+                            <ul class="technologies__list">
+                                <li class="technologies__item">JavaScript</li>
+                                <li class="technologies__item">HTML</li>
+                                <li class="technologies__item">CSS</li>
+                                <li class="technologies__item">ReactJS</li>
+                                <li class="technologies__item">Redux</li>
+                                <li class="technologies__item">Redux Thunk</li>
+                                <li class="technologies__item">Play with Redux Saga</li>
+                                <li class="technologies__item">Ramda</li>
+                                <li class="technologies__item">Webpack</li>
+                                <li class="technologies__item">Babel</li>
+                                <li class="technologies__item">Bootstrap</li>
+                                <li class="technologies__item">Axios</li>
+                            </ul>
+                        </div>
                     </article>
                 </dd>
             </dl>
@@ -402,8 +451,19 @@
                         <p>My graduation project: <a class="description-list__link description-list__link_graduation"
                                                      href="https://604karev.github.io/visualiserCanvas/">Canvas
                             Visualiser</a></p>
+                        <div class="technologies">
+                            <p class="technologies__paragraph">Technologies what I used:</p>
+                            <ul class="technologies__list">
+                                <li class="technologies__item">HTML</li>
+                                <li class="technologies__item">CSS</li>
+                                <li class="technologies__item">JavaScript</li>
+                                <li class="technologies__item">jQuery</li>
+                                <li class="technologies__item">SoundCloud API</li>
+                                <li class="technologies__item">Canvas</li>
+                                <li class="technologies__item">Ajax</li>
+                            </ul>
+                        </div>
                     </article>
-
                 </dd>
             </dl>
             <dl class="description-list">
@@ -422,6 +482,47 @@
                     <p>The topic of my thesis project: "Gain control of a photodetector"</p>
                 </dd>
             </dl>
+        </section>
+        <section class="section s-code">
+            <h2 class="h2 subheader">Code Examples</h2>
+            <pre class="code-wrapper">
+                    <code class="code">
+    let isPlay = false;
+    let timeOutId;
+    const listLength = playList.length - 1;
+    const convertToMilliseconds = (min, sec) => (parseInt(min) * 60 + parseInt(sec)) * 1000;
+
+    const getTrackNumber = (playNum = 0) => {
+        return (direction = '') => {
+            switch (direction) {
+                case 'NEXT':
+                    let nextDirection = playNum >= listLength ? playNum = 0 : ++playNum;
+                    return getTrack(nextDirection);
+                case 'PREV':
+                    let prevDirection = playNum <= 0 ? playNum = listLength : --playNum;
+                    return getTrack(prevDirection);
+                default:
+                    return getTrack(playNum)
+            }
+        }
+    };
+
+    const playTrack = getTrackNumber();
+
+    const getTrack = (playNum) => {
+        clearTimeout(timeOutId);
+        const list = document.querySelectorAll('.play-item');
+        list.forEach(item => item.classList.remove('item-active'));
+        list[playNum].classList.add('item-active');
+        audio.src = playList[playNum].src;
+        isPlay ? audio.play() : audio.pause();
+        const durationArray = playList[playNum].duration.split(':');
+        const duration = convertToMilliseconds(...durationArray);
+        timeOutId = setTimeout(() => playTrack('NEXT'), duration);
+    };
+                    </code>
+                </pre>
+
         </section>
     </main>
     <footer class="footer">
@@ -568,6 +669,6 @@
 <span class="overlay"></span>
 
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

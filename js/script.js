@@ -4,7 +4,6 @@ const sideBarWrapper = document.querySelector('.sidebar-wrapper');
 const body = document.querySelector('body');
 const overlay = document.querySelector('.overlay');
 
-
 const toggleSidebar = (e) => {
     sideBar.classList.toggle('active');
     body.classList.toggle('active');
