@@ -372,8 +372,11 @@ html.active .overlay {
 
 .aside-list__item {
     position: relative;
-    padding-left: 50px;
     margin-bottom: 1rem;
+}
+
+.aside-list__item_padding-left {
+    padding-left: 3rem;
 }
 
 .aside-list__h4 {
@@ -404,9 +407,6 @@ html.active .overlay {
     margin-left: auto;
 }
 
-.aside-list__item_progress {
-    padding-left: 0;
-}
 
 progress {
     border-radius: 0;
