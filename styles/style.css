@@ -83,7 +83,7 @@ img {
 }
 
 .section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -103,16 +103,16 @@ img {
     box-shadow: -2px 0px 15px 5px rgba(0, 0, 0, .2);
 }
 
-.sidebar.active .burger-line{
+body.active .burger-line{
     transform: translateX(-30px);
     background: transparent;
 }
 
-.sidebar.active .burger-line:before {
+body.active .burger-line:before {
     transform: rotate(45deg) translate(15px, -15px);
 }
 
-.sidebar.active .burger-line:after {
+body.active .burger-line:after {
     transform: rotate(-45deg) translate(15px, 15px);
 }
 
@@ -253,6 +253,12 @@ body.active .overlay {
 .sidebar-wrapper.visible {
     display: flex;
 }
+.nav__link{
+    transition: color .5s ease;
+}
+.nav__link:hover{
+    color: #F09518;
+}
 
 .description-list {
     display: -webkit-box;
@@ -320,9 +326,6 @@ body.active .overlay {
     transform: rotate(45deg);
 }
 
-.aside-list {
-    margin-bottom: 1.5rem;
-}
 
 .aside-list__svg {
     width: 40px;
