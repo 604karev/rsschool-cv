@@ -42,6 +42,8 @@ html {
     font-size: 15px;
     scroll-behavior: smooth;
     height: auto;
+    transition: font-size .5s ease
+
 }
 
 
@@ -97,7 +99,7 @@ img {
     right: 0;
     bottom: 0;
     width: 350px;
-    transition: width .5s ease;
+    transition: width .5s ease, padding-top .5s ease;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     z-index: 1;
@@ -160,7 +162,7 @@ html.active body {
     position: absolute;
     height: 30px;
     pointer-events: auto;
-    transition: all .5s ease;
+    transition: margin-right .5s ease;
     align-items: center;
     justify-content: center;
 }
@@ -264,6 +266,11 @@ html.active .overlay {
     display: flex;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
 .nav__link {
     transition: color .5s ease;
 }
@@ -340,8 +347,8 @@ html.active .overlay {
 
 
 .aside-list__svg {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
     top: 5px;
     left: 0;
@@ -356,18 +363,13 @@ html.active .overlay {
     justify-content: center;
 }
 
-.envelope {
-    width: 35px;
-    left: 2px;
-}
 
 .aside-list__svg path {
     fill: #F09518;
 }
 
 .phone {
-    width: 32px;
-    left: 5px;
+    left: 2px;
 }
 
 .aside-list__item {
@@ -376,7 +378,7 @@ html.active .overlay {
 }
 
 .aside-list__item_padding-left {
-    padding-left: 3rem;
+    padding-left: 4rem;
 }
 
 .aside-list__h4 {
@@ -579,7 +581,7 @@ progress::-moz-progress-bar {
         width: 80px;
         z-index: 110;
         position: fixed;
-        padding-top: 150px;
+        padding-top: 10rem;
     }
 
     .main .section, .footer {
@@ -623,9 +625,6 @@ progress::-moz-progress-bar {
         width: 200px;
     }
 
-    progress {
-        max-width: 200px;
-    }
 }
 
 @media (max-width: 576px) {
