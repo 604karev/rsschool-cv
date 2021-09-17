@@ -2,7 +2,7 @@ const sideBar = document.querySelector('.sidebar');
 const burger = document.querySelector('.burger');
 const sideBarWrapper = document.querySelector('.sidebar-wrapper');
 const html = document.querySelector('html');
-const overlay = document.querySelector('.overlay');
+const body = document.querySelector('body');
 const nav = document.querySelector('.s-nav');
 
 const toggleSidebar = (e) => {
@@ -32,14 +32,14 @@ const checkVisible = () => {
     }
 };
 const removeActive = (e) => {
-    if (e.target.classList.contains('aside-list__link') && window.innerWidth <= 1140) {
+    if (e.target.classList.contains('aside-list__link') && window.innerWidth <= 1140 || e.target === body) {
         sideBarWrapper.classList.remove('visible');
         html.classList.remove('active');
     }
 };
 
 nav.addEventListener('click', removeActive);
-overlay.addEventListener('click', toggleSidebar);
+body.addEventListener('click', removeActive);
 burger.addEventListener('click', toggleSidebar);
 sideBar.addEventListener('transitionend', toggleInformation);
 window.addEventListener('resize', removeVisible);
