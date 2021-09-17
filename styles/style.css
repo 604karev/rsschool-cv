@@ -40,6 +40,8 @@ html, body {
 
 html {
     font-size: 15px;
+    scroll-behavior: smooth;
+    height: auto;
 }
 
 
@@ -47,7 +49,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     min-height: 100vh;
-    scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.6;
     background-color: #d4d8d7;
@@ -103,17 +104,25 @@ img {
     box-shadow: -2px 0px 15px 5px rgba(0, 0, 0, .2);
 }
 
-body.active .burger-line{
+html.active .burger-line {
     transform: translateX(-30px);
     background: transparent;
 }
 
-body.active .burger-line:before {
+html.active .burger-line:before {
     transform: rotate(45deg) translate(15px, -15px);
 }
 
-body.active .burger-line:after {
+html.active .burger-line:after {
     transform: rotate(-45deg) translate(15px, 15px);
+}
+
+html.active {
+    overflow-y: hidden;
+}
+
+html.active body {
+    overflow-y: scroll;
 }
 
 .burger-line, .burger-line:before, .burger-line:after {
@@ -124,7 +133,8 @@ body.active .burger-line:after {
     transition: all .5s ease-in-out;
     display: inline-block;
 }
-.burger-line:before, .burger-line:after{
+
+.burger-line:before, .burger-line:after {
     position: absolute;
     content: '';
 }
@@ -227,12 +237,12 @@ body.active .burger-line:after {
     margin-left: -1.5rem;
 }
 
-body.active .sidebar {
+html.active .sidebar {
     width: 350px;
     overflow-y: auto;
 }
 
-body.active .overlay {
+html.active .overlay {
     display: block;
 }
 
@@ -253,10 +263,12 @@ body.active .overlay {
 .sidebar-wrapper.visible {
     display: flex;
 }
-.nav__link{
+
+.nav__link {
     transition: color .5s ease;
 }
-.nav__link:hover{
+
+.nav__link:hover {
     color: #F09518;
 }
 
@@ -603,7 +615,7 @@ progress::-moz-progress-bar {
         margin-left: auto;
     }
 
-    body.active .sidebar {
+    html.active .sidebar {
         width: 320px;
     }
 
@@ -662,7 +674,7 @@ progress::-moz-progress-bar {
         display: none !important;
     }
 
-    body.active .sidebar {
+    html.active .sidebar {
         overflow-y: hidden !important;
     }
 
