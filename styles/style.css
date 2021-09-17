@@ -42,8 +42,8 @@ html {
     font-size: 15px;
     scroll-behavior: smooth;
     height: auto;
+    transition: font-size .5s ease
 }
-
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -54,6 +54,7 @@ body {
     background-color: #d4d8d7;
     color: #3B3A3B;
     position: relative;
+    min-width: 320px;
 }
 
 ul[class],
@@ -97,7 +98,7 @@ img {
     right: 0;
     bottom: 0;
     width: 350px;
-    transition: width .5s ease;
+    transition: width .5s ease, padding-top .5s ease;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     z-index: 1;
@@ -160,7 +161,7 @@ html.active body {
     position: absolute;
     height: 30px;
     pointer-events: auto;
-    transition: all .5s ease;
+    transition: margin-right .5s ease;
     align-items: center;
     justify-content: center;
 }
@@ -264,6 +265,11 @@ html.active .overlay {
     display: flex;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
 .nav__link {
     transition: color .5s ease;
 }
@@ -340,8 +346,8 @@ html.active .overlay {
 
 
 .aside-list__svg {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
     top: 5px;
     left: 0;
@@ -356,24 +362,22 @@ html.active .overlay {
     justify-content: center;
 }
 
-.envelope {
-    width: 35px;
-    left: 2px;
-}
 
 .aside-list__svg path {
     fill: #F09518;
 }
 
 .phone {
-    width: 32px;
-    left: 5px;
+    left: 2px;
 }
 
 .aside-list__item {
     position: relative;
-    padding-left: 50px;
     margin-bottom: 1rem;
+}
+
+.aside-list__item_padding-left {
+    padding-left: 4rem;
 }
 
 .aside-list__h4 {
@@ -404,10 +408,6 @@ html.active .overlay {
     margin-left: auto;
 }
 
-.aside-list__item_progress {
-    padding-left: 0;
-}
-
 progress {
     border-radius: 0;
     border: 2px solid #FF9933;
@@ -433,7 +433,6 @@ progress::-moz-progress-bar {
     display: block;
     margin-top: auto;
     position: relative;
-
 }
 
 .social-list:before {
@@ -579,7 +578,7 @@ progress::-moz-progress-bar {
         width: 80px;
         z-index: 110;
         position: fixed;
-        padding-top: 150px;
+        padding-top: 10rem;
     }
 
     .main .section, .footer {
@@ -622,10 +621,6 @@ progress::-moz-progress-bar {
     .aside-heading {
         width: 200px;
     }
-
-    progress {
-        max-width: 200px;
-    }
 }
 
 @media (max-width: 576px) {
@@ -643,7 +638,6 @@ progress::-moz-progress-bar {
     }
 
     .description-list__wrapper {
-
         margin-right: auto;
     }
 
@@ -675,6 +669,14 @@ progress::-moz-progress-bar {
     }
 
     html.active .sidebar {
+        overflow-y: hidden !important;
+    }
+
+    html{
+        overflow-y: scroll !important;
+    }
+
+    html.active body{
         overflow-y: hidden !important;
     }
 
