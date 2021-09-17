@@ -587,7 +587,7 @@
                     let nextDirection = playNum >= listLength ? playNum = 0 : ++playNum;
                     return getTrack(nextDirection);
                 case 'PREV':
-                    let prevDirection = playNum <= 0 ? playNum = listLength : --playNum;
+                    let prevDirection = playNum &lt;= 0 ? playNum = listLength : --playNum;
                     return getTrack(prevDirection);
                 default:
                     return getTrack(playNum)
@@ -754,7 +754,6 @@
 
     </footer>
 </div>
-<span class="overlay"></span>
 
 
 <script src="js/script.js"></script>

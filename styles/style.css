@@ -240,10 +240,10 @@ html.active body {
 
 html.active .sidebar {
     width: 350px;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
-html.active .overlay {
+html.active body:before {
     display: block;
 }
 
@@ -527,7 +527,7 @@ progress::-moz-progress-bar {
     font-weight: 500;
 }
 
-.overlay {
+body:before {
     content: '';
     position: fixed;
     top: 0;
@@ -664,7 +664,7 @@ progress::-moz-progress-bar {
 }
 
 @media (min-width: 1141px) {
-    .overlay {
+    body:before {
         display: none !important;
     }
 
@@ -672,12 +672,11 @@ progress::-moz-progress-bar {
         overflow-y: hidden !important;
     }
 
-    html{
+    html {
         overflow-y: scroll !important;
     }
 
-    html.active body{
+    html.active body {
         overflow-y: hidden !important;
     }
-
 }
