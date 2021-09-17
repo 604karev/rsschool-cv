@@ -43,9 +43,7 @@ html {
     scroll-behavior: smooth;
     height: auto;
     transition: font-size .5s ease
-
 }
-
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -56,6 +54,7 @@ body {
     background-color: #d4d8d7;
     color: #3B3A3B;
     position: relative;
+    min-width: 320px;
 }
 
 ul[class],
@@ -409,7 +408,6 @@ html.active .overlay {
     margin-left: auto;
 }
 
-
 progress {
     border-radius: 0;
     border: 2px solid #FF9933;
@@ -435,7 +433,6 @@ progress::-moz-progress-bar {
     display: block;
     margin-top: auto;
     position: relative;
-
 }
 
 .social-list:before {
@@ -624,7 +621,6 @@ progress::-moz-progress-bar {
     .aside-heading {
         width: 200px;
     }
-
 }
 
 @media (max-width: 576px) {
@@ -642,7 +638,6 @@ progress::-moz-progress-bar {
     }
 
     .description-list__wrapper {
-
         margin-right: auto;
     }
 
@@ -676,9 +671,11 @@ progress::-moz-progress-bar {
     html.active .sidebar {
         overflow-y: hidden !important;
     }
+
     html{
         overflow-y: scroll !important;
     }
+
     html.active body{
         overflow-y: hidden !important;
     }
