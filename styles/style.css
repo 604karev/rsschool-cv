@@ -676,5 +676,11 @@ progress::-moz-progress-bar {
     html.active .sidebar {
         overflow-y: hidden !important;
     }
+    html{
+        overflow-y: scroll !important;
+    }
+    html.active body{
+        overflow-y: hidden !important;
+    }
 
 }
