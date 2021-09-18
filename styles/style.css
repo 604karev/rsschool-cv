@@ -112,11 +112,11 @@ html.active .burger-line {
 }
 
 html.active .burger-line:before {
-    transform: rotate(45deg) translate(15px, -15px);
+    transform: rotate(45deg) translate(22px, -22px);
 }
 
 html.active .burger-line:after {
-    transform: rotate(-45deg) translate(15px, 15px);
+    transform: rotate(-45deg) translate(22px, 22px);
 }
 
 html.active {
