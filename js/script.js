@@ -33,7 +33,7 @@ const checkVisible = () => {
     }
 };
 const removeActive = (e) => {
-    if (e.target.classList.contains('aside-list__link') && window.innerWidth <= 1140 || e.target === body) {
+    if (e.target.classList.contains('aside-list__link') && window.innerWidth <= 1140 || e.target === body&& window.innerWidth <= 1140) {
         sideBarWrapper.classList.remove('visible');
         html.classList.remove('active');
     }
