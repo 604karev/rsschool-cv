@@ -8,7 +8,7 @@ const nav = document.querySelector('.s-nav');
 const toggleSidebar = (e) => {
     html.classList.toggle('active');
     sideBarWrapper.classList.remove('visible');
-    console.log(document.body.clientWidth, window.innerWidth)
+    /*console.log(document.body.clientWidth, window.innerWidth)*/
 };
 
 const toggleInformation = (e) => {
