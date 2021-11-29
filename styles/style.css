@@ -99,8 +99,6 @@ img {
     bottom: 0;
     width: 350px;
     transition: width .5s ease, padding-top .5s ease;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
     z-index: 1;
     box-shadow: -2px 0px 15px 5px rgba(0, 0, 0, .2);
     min-height: 100vh;
@@ -433,7 +431,9 @@ progress::-moz-progress-bar {
     list-style: none;
     display: block;
     margin-top: auto;
+    z-index: 5;
     position: relative;
+
 }
 
 .social-list:before {
@@ -454,6 +454,8 @@ progress::-moz-progress-bar {
 .social-list__svg {
     width: 30px;
     height: 30px;
+    position: relative;
+
 }
 
 .social-list__svg path {
@@ -484,14 +486,11 @@ progress::-moz-progress-bar {
 }
 
 .s-social {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
-    margin-top: 4rem;
+    flex: 1 1 0;
+    position: relative;
+    z-index: 5;
+
 }
 
 .footer {
@@ -539,8 +538,6 @@ body:before {
     z-index: 10;
     display: none;
     cursor: pointer;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
     min-height: 100vh;
 }
 
