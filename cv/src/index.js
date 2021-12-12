@@ -1,6 +1,7 @@
 import image from './assets/img/kirill-hrudzinski.png';
 import hljs from './js/highlight.min';
 import 'highlight.js/styles/github-dark-dimmed.css';
+import './style.css';
 
 import {
     toggleSidebar,
