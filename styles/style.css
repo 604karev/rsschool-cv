@@ -380,8 +380,9 @@ html.active body:before {
     padding-left: 4rem;
 }
 
-.aside-list__h4 {
+.aside-list__h3 {
     text-transform: uppercase;
+    font-size: 1em;
 }
 
 .aside-list__label {
