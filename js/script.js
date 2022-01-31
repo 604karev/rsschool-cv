@@ -1,9 +1,13 @@
+
+
 const sideBar = document.querySelector('.sidebar');
 const burger = document.querySelector('.burger');
 const sideBarWrapper = document.querySelector('.sidebar-wrapper');
 const html = document.querySelector('html');
 const body = document.querySelector('body');
 const nav = document.querySelector('.s-nav');
+const pictureWrapper = document.querySelector('.picture-wrapper');
+
 
 const toggleSidebar = (e) => {
     html.classList.toggle('active');
@@ -38,6 +42,21 @@ const removeActive = (e) => {
         html.classList.remove('active');
     }
 };
+const createImage = (src) => new Promise((res, rej) => {
+    const img = new Image();
+    img.onload = () => res(img);
+    img.onerror = rej;
+    img.src = src;
+});
+
+async function render() {
+    const myImage = await createImage('./assets/img/kirill-hrudzinski.png');
+    myImage.classList.add('cv-picture');
+    myImage.alt = 'kirill-hrudzinski';
+    pictureWrapper.appendChild(myImage);
+}
+
+render();
 
 nav.addEventListener('click', removeActive);
 body.addEventListener('click', removeActive);
@@ -45,4 +64,5 @@ burger.addEventListener('click', toggleSidebar);
 sideBar.addEventListener('transitionend', toggleInformation);
 window.addEventListener('resize', removeVisible);
 window.addEventListener('load', checkVisible);
+
 
