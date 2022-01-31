@@ -299,9 +299,10 @@ html.active body:before {
     flex: 7 1 0;
 }
 
-.description-list__h4, .time {
+.description-list__h3, .time {
     margin-bottom: .3rem;
     display: block;
+    font-size: 1em;
 }
 
 .description-list__link, .information__link {
