@@ -61,6 +61,7 @@ const printDocument = () => {
   html.classList.remove("active");
   sideBarWrapper.classList.remove("visible");
   window.print();
+  sideBarWrapper.classList.add("visible");
 };
 
 nav.addEventListener("click", removeActive);
