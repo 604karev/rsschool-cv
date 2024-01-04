@@ -52,7 +52,7 @@ const createImage = (src) =>
   });
 
 async function render() {
-  const myImage = await createImage("./assets/img/kirill-hrudzinski.png");
+  const myImage = await createImage("./assets/img/hrudzinski.jpg");
   myImage.classList.add("cv-picture");
   myImage.alt = "kirill-hrudzinski";
   pictureWrapper.appendChild(myImage);
